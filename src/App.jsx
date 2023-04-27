@@ -10,6 +10,7 @@ const App = () => {
 
   const [search, setSearch] = useState("");
 
+  // To delete item from state and local storage
   const deleteItem = (name) => {
     const newData = data.filter((item) => item.name !== name);
     setData(newData);
@@ -21,6 +22,8 @@ const App = () => {
       <AddData data={data} setData={setData} />
       <div>
         <SearchData search={search} setSearch={setSearch} />
+
+        {/* filters the data based on the search input otherwise displays full state*/}
         <Content
           data={data.filter((item) =>
             item.name.toLowerCase().includes(search.toLowerCase())

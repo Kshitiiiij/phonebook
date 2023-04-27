@@ -10,6 +10,8 @@ const ItemContent = ({ id, name, contact, onDel, deleteItem }) => {
       <td>{contact}</td>
       <td onClick={()=> OnDialog(true)} className="pointer">X</td>
     </tr>
+
+    {/* Alert box */}
     {dialog && <AlertBox onDialog={OnDialog} deleteItem={deleteItem} name={name}/>}
     </>
   );

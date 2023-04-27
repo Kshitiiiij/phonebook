@@ -1,3 +1,4 @@
+/* css for the form */
 .contianer {
   max-width: 60%;
   margin: 0 auto;
@@ -69,6 +70,7 @@ p {
   font-size: 1rem;
 }
 
+/* CSS for table */
 table {
   border-collapse: collapse;
   border: 1px solid black;
@@ -93,6 +95,8 @@ thead th {
 .pointer {
   cursor: pointer;
 }
+
+/* CSS for alert box */
 .alret-box {
   position: fiexed;
   top: 0;
@@ -133,7 +137,7 @@ thead th {
   cursor: pointer;
 }
 
-
+/* Moile Screens */
 @media only screen and (max-width: 480px) {
   .contianer {
     max-width: 90%;
